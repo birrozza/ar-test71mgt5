@@ -8,7 +8,19 @@
     <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
   </head>
-
+  <script>
+    window.addEventListener('load', () => {
+      const camera = document.querySelector('[gps-camera]');
+      const marker = document.querySelector('a-image');
+      const text = document.querySelector('a-text');
+      let check;
+      let cameraPosition = camera.object3D.position;
+      let markerPosition = marker.object3D.position;
+      let distance = cameraPosition.distanceTo(markerPosition);
+      text.value="ttttt";
+    }); 
+      
+  </script>  
   <body style="margin: 0; overflow: hidden;">
     <a-scene
       vr-mode-ui="enabled: false"
