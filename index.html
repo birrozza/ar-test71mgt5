@@ -20,7 +20,7 @@
       check = setInterval(() => {
             cameraPosition = camera.object3D.position;
             markerPosition = marker.object3D.position;
-            distance = Number(cameraPosition.distanceTo(markerPosition)*100)/100;
+            distance = Math.round(cameraPosition.distanceTo(markerPosition)*100)/100;
 
             // do what you want with the distance:
             text.setAttribute("value", distance);
