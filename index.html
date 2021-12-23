@@ -18,10 +18,10 @@
       let markerPosition = marker.object3D.position;
       let distance = cameraPosition.distanceTo(markerPosition);
       check = setInterval(() => {
-            cameraPosition = camera.object3D.position;
-            markerPosition = marker.object3D.position;
-            distance = Math.round(cameraPosition.distanceTo(markerPosition)*100)/100;
-
+            //cameraPosition = camera.object3D.position;
+            //markerPosition = marker.object3D.position;
+            //distance = Math.round(cameraPosition.distanceTo(markerPosition)*100)/100;
+            const distance = marker.getAttribute('distanceMsg');
             // do what you want with the distance:
             text.setAttribute("value", distance);
         }, 100);  
