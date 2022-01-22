@@ -15,5 +15,5 @@
 | TimeLib.h | Ver 1.6.1 |
 | ArduinoOTA.h | ....... |
 
-<h3>Feautures</h3>
+### features
 Thanks to code inside (sketch), the data is sent to a web platform (www.thingspeak.com) and displayed through graphics. Moreover, these and other data can be viewed on all network devices because the Wemos card works as a <strong>web-server </strong>([see below](#software-istruction)). It is possible to activate a **bot** on a **Telegram** with which to remotely interrogate the sensor ([see below](#Enable-a-Telegram-bot-to-be-able-to-interrogate-the-sensor)).
